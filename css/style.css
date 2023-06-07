@@ -17,7 +17,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray: #6c757d;
+  --gray: #0C035E;
   --gray-dark: #343a40;
   --primary: #FFD333;
   --secondary: #F5F5F5;
@@ -59,9 +59,12 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6C757D;
+  color: #0C035E;
   text-align: left;
-  background-color: #F5F5F5;
+  background-color: #F6F6F6;
+	background-image:url("../img/back.jpg");
+	background-size: contain;
+
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -1784,7 +1787,7 @@ pre code {
 }
 
 .table .thead-light th {
-  color: #495057;
+  color: #F6F6F6;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
@@ -4215,7 +4218,7 @@ input[type="button"].btn-block {
     padding-left: 0.5rem;
   }
   .navbar-expand-xl > .container,
-  .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
+  .navbar-expand-xl > .<strong>container-fluid</strong>, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
     flex-wrap: nowrap;
   }
   .navbar-expand-xl .navbar-collapse {
@@ -6105,6 +6108,10 @@ button.bg-primary:focus {
 
 .bg-secondary {
   background-color: #F5F5F5 !important;
+	border-top-left-radius: 20px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 30px;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -6155,16 +6162,32 @@ button.bg-danger:focus {
 
 .bg-light {
   background-color: #FFFFFF !important;
+	border-top-left-radius: 20px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 30px;
 }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
   background-color: #e6e6e6 !important;
+
 }
 
 .bg-dark {
-  background-color: #3D464D !important;
+  background-color: #04135F !important;
+}
+
+.bg-backcol
+{
+	 background-color: rgba(0, 0, 0, .5);
+
+
+
+  padding-top: 1em;
+	background-color: #04135F;
+	opacity: 50;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
